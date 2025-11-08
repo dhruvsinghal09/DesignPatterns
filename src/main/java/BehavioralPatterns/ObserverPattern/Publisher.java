@@ -3,24 +3,11 @@ package main.java.BehavioralPatterns.ObserverPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Publisher {
+interface Publisher {
 
-    private List<DeviceObserver> observers;
+    void addObservers(DeviceObserver deviceObserver);
 
-    Publisher() {
-        this.observers = new ArrayList<>();
-    }
+    void removeObserver(DeviceObserver deviceObserver);
 
-    public void addObservers(DeviceObserver deviceObserver){
-        observers.add(deviceObserver);
-    }
-
-    public void removeObserver(DeviceObserver deviceObserver){
-        observers.remove(deviceObserver);
-    }
-
-    public void notifyAllObservers(double temp){
-        observers.parallelStream()
-                .forEach(deviceObserver -> deviceObserver.update(temp));
-    }
+    void notifyAllObservers();
 }
