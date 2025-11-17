@@ -7,11 +7,12 @@ public class CommandPattern {
         Command boldCommand = new BoldCommand(textEditor);
         Command italicCommand = new ItalicCommand(textEditor);
         Command underlineCommand = new UnderlineCommand(textEditor);
-        Button b1 = new Button(boldCommand);
+        Button b1 = new Button();
+        b1.setCommand(boldCommand);
         b1.onClick();
-        b1 = new Button(italicCommand);
+        b1.setCommand(italicCommand);
         b1.onClick();
-        b1 = new Button(underlineCommand);
+        b1.setCommand(underlineCommand);
         b1.onClick();
     }
 }
