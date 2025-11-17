@@ -7,6 +7,7 @@ public class CommandPattern {
         Command boldCommand = new BoldCommand(textEditor);
         Command italicCommand = new ItalicCommand(textEditor);
         Command underlineCommand = new UnderlineCommand(textEditor);
+        /* decoupling i.e one button can do many type of actions */
         Button b1 = new Button();
         b1.setCommand(boldCommand);
         b1.onClick();
