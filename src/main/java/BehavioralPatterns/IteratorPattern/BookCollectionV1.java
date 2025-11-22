@@ -3,11 +3,11 @@ package main.java.BehavioralPatterns.IteratorPattern;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookCollection {
+public class BookCollectionV1 {
 
     private List<Book> books;
 
-    public BookCollection(){
+    public BookCollectionV1(){
         books = new ArrayList<>();
     }
 
