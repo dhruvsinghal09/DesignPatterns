@@ -1,0 +1,13 @@
+package main.java.DesignPatterns.BehavioralPatterns.StatePattern;
+
+public class Car implements TransportMode {
+    @Override
+    public void getETA() {
+        System.out.println("The ETA via Car is 10 minutes");
+    }
+
+    @Override
+    public void getDirections() {
+        System.out.println("Take the next right and follow the lane for 5 KM.");
+    }
+}
