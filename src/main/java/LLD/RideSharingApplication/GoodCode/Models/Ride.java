@@ -1,5 +1,6 @@
 package main.java.LLD.RideSharingApplication.GoodCode.Models;
 
+import main.java.LLD.RideSharingApplication.GoodCode.Enums.RideStatus;
 import main.java.LLD.RideSharingApplication.GoodCode.Service.FareStrategy;
 
 public class Ride {

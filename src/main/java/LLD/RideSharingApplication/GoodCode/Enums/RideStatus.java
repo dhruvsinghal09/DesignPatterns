@@ -1,4 +1,4 @@
-package main.java.LLD.RideSharingApplication.GoodCode.Models;
+package main.java.LLD.RideSharingApplication.GoodCode.Enums;
 
 public enum RideStatus {
 
