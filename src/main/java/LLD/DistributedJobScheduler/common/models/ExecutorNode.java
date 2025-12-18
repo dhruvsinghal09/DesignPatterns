@@ -37,11 +37,8 @@ public class ExecutorNode {
         return currentLoad.get();
     }
 
-    public void addJob(){
-        currentLoad.getAndIncrement();
-    }
-
     public void addJobsToExecute(Job job){
+        currentLoad.getAndIncrement();
         jobsToExecute.add(job);
     }
 

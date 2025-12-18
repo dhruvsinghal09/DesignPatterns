@@ -23,7 +23,6 @@ public class Coordinator {
         List<ExecutorNode> nodes = nodesRepository.getAllNodes();
         for(ExecutorNode node : nodes){
             if(node.getCapacity()>node.getCurrentLoad()){
-                node.addJob();
                 node.addJobsToExecute(job);
                 return;
             }
