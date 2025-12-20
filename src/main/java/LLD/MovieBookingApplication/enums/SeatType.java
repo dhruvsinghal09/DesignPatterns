@@ -7,7 +7,7 @@ public enum SeatType {
     GOLD(1.5),
     SILVER(1);
 
-    private double priceMultiplier;
+    private final double priceMultiplier;
 
     SeatType(double priceMultiplier){
         this.priceMultiplier=priceMultiplier;
