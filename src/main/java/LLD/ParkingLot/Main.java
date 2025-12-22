@@ -45,7 +45,7 @@ public class Main {
         Thread.sleep(1000);
 
         //Got the CostComputationManager for the given VehicleType from the Factory
-        CostComputationManager costComputationManager = CostComputationManagerFactory.getCostComputationManager(ticket,new PaymentService());
+        CostComputationManager costComputationManager = CostComputationManagerFactory.getCostComputationManager(ticket);
 
         Exit exit = new Exit(costComputationManager,new PaymentService());
 

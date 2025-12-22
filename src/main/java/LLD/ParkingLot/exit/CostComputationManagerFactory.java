@@ -10,7 +10,7 @@ import main.java.LLD.ParkingLot.exit.templatePattern.TwoWheelerCostComputationMa
 
 public class CostComputationManagerFactory {
 
-    public static CostComputationManager getCostComputationManager(Ticket ticket, PaymentService paymentService){
+    public static CostComputationManager getCostComputationManager(Ticket ticket){
         return switch (ticket.getVehicle().getVehicleType()){
             case TWO_WHEELER -> new TwoWheelerCostComputationManager(new PerMinuteCostStrategy());
             case FOUR_WHEELER -> new FourWheelerCostComputationManager(new PerHourCostStrategy());
